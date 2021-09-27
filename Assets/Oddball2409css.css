@@ -1,0 +1,321 @@
+@charset "utf-8";
+/* CSS Document */
+
+@import url("https://use.typekit.net/ymv8vsf.css");
+
+@font-face {
+  font-family: "goord-Regular";
+  src: url("fonts/goord.otf");
+}
+section.headersection{
+	width:100%;
+	height:720px;
+	margin-top:10px;
+}
+#headerbackground{
+	display: block;
+	margin-left: auto;
+	margin-right:auto;
+	width:30%;
+	height:400px;
+	background: url("images/Starry sky bg gaussian.gif");
+
+}
+
+#logoanchor{
+	display: block;
+	height: 20%;
+	width: 100%;
+
+}
+
+#logo img{
+	display: block;
+	position:relative;
+	transform: translateY(-50%);
+	width:20%;
+	margin-left: auto;
+	margin-right: auto;
+
+}
+
+
+h1 abbr{
+	text-decoration: none;
+}
+
+h1{
+	position: relative;
+	top: -150px;
+	text-align:center;
+	font-family: "brigade", serif ;
+	font-size: 2.5em;
+	font-style: normal;
+	text-decoration: none;
+		
+}
+
+section.main, section.topright, section.bottomleft{
+	display: inline-block;
+}
+#portfoliobutton{
+	display: block;
+	width:100%;
+	height:500px;
+	float:left;
+
+}
+#illustrationbutton{
+	width: 100%;
+	height: 700px;
+}
+#aboutbutton{
+	width:100%;
+	height:190px;
+}
+section.main{
+	width:57%;
+	height:500px;
+	background:linear-gradient(to right, rgba(216,138,235,1.00),rgba(66,83,167,1.00));
+	float: left;
+	margin-right:1%;
+	margin-left:1%;
+
+	-webkit-transition: all 2s;
+	-moz-transition: all 2s;
+	-ms-transition: all 2s;
+	-o-transition: all 2s;
+}
+
+section.main:hover{
+	background: linear-gradient(to right, rgba(220,181,181,1.00), rgba(171,232,148,1.00));
+
+}
+section.topright{
+	background: linear-gradient(to left, rgba(249,248,187,1.00), rgba(146,141,204,1.00));
+	width: 40%;
+	height: 700px;
+}
+
+section.topright:hover{
+	background: linear-gradient(to right, rgba(249,248,187,1.00), rgba(91,235,225,1.00));
+}
+section.bottomleft{
+	position: relative;
+	background: linear-gradient(to top, rgba(243,243,243,1.00), rgba(232,137,139,1.00));
+	top: -189px;
+	width:57%;
+	height:190px;
+	margin-left: 1%;
+}
+section.bottomleft:hover{
+	background: linear-gradient(to top, rgba(232,137,139,1.00),rgba(142,149,235,1.00));
+}
+#portfoliotext, #illustrations,#about{
+	display: inline-block;
+	font-family: brigade,"goord-Regular","sans-serif";
+	
+	font-style: normal;
+	font-size: 300%;
+	padding-left: 15px;
+	padding-top: 15px;
+	margin: 2px;
+
+}
+
+
+
+.feather-70{
+	position:relative;
+	display: block;
+	stroke-width: 1.5px;
+	width:70px;
+	height:70px;
+	padding-left:5px;
+
+
+}
+/*links*/
+a {
+	display: inline-block;
+	text-decoration:line-through;
+	color: #000000;
+
+}
+.main a, .topright a, .bottomleft a{
+	color: rgba(255,255,255,1.00);
+}
+a:visited{
+	text-decoration: none;
+}
+a:hover{
+	transition-property: color;
+	transition-duration: .7s;
+	transition-timing-function: ease-in;
+	color: #700001;
+	
+
+}
+
+
+#burgermenu{
+	display: block;
+	position: fixed;
+	top: 1%;
+	right:1%;
+	transition: all, 1s linear ease-in-out .2s;
+	
+}
+#burgermenu .feather-70{
+	stroke-width: 1px;
+	width:60%;
+}
+#unorderednavmenu{
+	
+	display: inline-block;
+	position: fixed;
+	top:10%;
+	right:5%;
+}
+li.menulist{
+	list-style-type: none;
+	
+	height:50px;
+	width:150px;
+	text-align: center;
+}
+.menulist:hover{
+	background: url("images/Starry sky bg gaussian.gif");
+	
+}
+
+.menu nav>ul{
+	display:none;
+	
+	transition: all 2s;
+}
+
+.menu a:focus + nav>ul{
+	display:block;
+}
+
+.menu nav>ul:hover{
+	display:block;
+}
+/*.container{
+	display:block;
+	position: fixed;
+	top: 1%;
+	right:1%;
+	width:70px;
+	height:70px;
+	
+}
+.container input{
+	
+	position:fixed;
+	top: 1%;
+	right:1%;
+	width:70px;
+	height:70px;
+	visibility:hidden;
+}
+
+.container input:checked, .closedmenu i{
+	display: block;
+	top:1%;
+	right:10%;
+} */
+/*div boxes*/
+#opened,#closed{
+	display: block;
+	position:fixed;
+	right: 0%;
+	top:0%;
+	width: 25vh;
+	height: 100vh;
+	background:rgba(217,217,217,1.00);
+}
+.active #opened, .inactive #closed{
+	right:100px;
+}
+.active #closed, .inactive #opened{
+	visibility:hidden;
+}
+#space{
+	display: block;
+	height: 10px;
+}
+/*footer*/
+.footersection{
+	display:inline-block;
+	width:100%;
+	height:100px;
+}
+#copyrightinfo{
+	display:inline-block;
+	margin-left:1%;
+	
+	float:left;
+}
+#backtotop{
+	display:inline;	
+	position:relative;
+	float: right;
+
+}
+#sitelinks{
+	display:inline;
+	position:relative;
+}
+#sitelinks ul{
+	align-items: center;
+	display:inline;
+	position:relative;
+	margin-left:auto;
+	margin-right: auto;
+}
+#sitelinks li{
+	display: inline;
+	position:relative;
+
+	padding-right: 2%;
+	
+	text-align: center;
+	
+}
+#sitelinks li:first-of-type{
+	margin-left: 20%;
+	}
+
+
+#copyrightinfo,#backtotop>a{
+	font-family: "brigade", serif ;
+	font-style: normal;
+	text-decoration: none rgba(50,50,50,1.00);
+}
+li.footerlist{
+	display: inline;
+	list-style: none;
+}
+li>a{
+	font-family: "brigade", serif ;
+	font-style: normal;
+	text-decoration: none rgba(50,50,50,1.00);
+}
+
+footer a:visited{
+	text-decoration:none;
+}
+footer a:hover{
+	text-decoration: underline;
+}
+html {
+  scroll-behavior: smooth;
+}
+li.menulist>a{
+	transition: all .5s;
+}
+li.menulist>a:hover{
+	color: rgba(255,255,255,1.00);
+}
